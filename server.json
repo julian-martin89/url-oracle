@@ -1,0 +1,13 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.julian-martin89/url-oracle",
+  "title": "url-oracle — URL Trust Oracle",
+  "description": "Flags phantom-squatted/typosquatted domains and known-malicious URLs before an agent follows them.",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://url-oracle.fly.dev/mcp"
+    }
+  ]
+}
