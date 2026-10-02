@@ -1,0 +1,53 @@
+{
+  "name": "url-oracle",
+  "version": "1.0.0",
+  "description": "Dependency Trust Oracle's sibling for links — a pay-per-call MCP server that verifies a URL/domain before an AI agent cites, recommends, or visits it. Monetized with x402 micropayments (USDC on Base).",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "x402",
+    "usdc",
+    "base",
+    "phantom-squatting",
+    "typosquatting",
+    "phishing-detection",
+    "url-verification",
+    "domain-reputation"
+  ],
+  "dependencies": {
+    "@coinbase/cdp-sdk": "^1.54.0",
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "@x402/core": "^2.21.0",
+    "@x402/evm": "^2.21.0",
+    "@x402/express": "^2.21.0",
+    "@x402/extensions": "^2.21.0",
+    "@x402/mcp": "^2.21.0",
+    "@x402/svm": "^2.21.0",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "fast-levenshtein": "^3.0.0",
+    "lru-cache": "^11.0.2",
+    "tldts": "^6.1.74",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/fast-levenshtein": "^0.0.4",
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
